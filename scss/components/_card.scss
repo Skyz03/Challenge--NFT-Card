@@ -3,7 +3,7 @@
   background-color: $card-color;
   padding: 1em;
   border-radius: 15px;
-
+  box-shadow: 3px 3px 15px $alternate-color;
   &__img {
     img {
       width: 100%;
@@ -12,30 +12,68 @@
 
   &__title {
     color: $white-color;
+    margin: 1em 0;
+    font-size: 1.6rem;
   }
 
   &__desc {
     color: $alternate-color;
+    line-height: 1.5;
+    font-size: 1.2rem;
   }
 
   &__timeline {
     display: flex;
     justify-content: space-between;
+    margin: 1em 0;
 
     .eth {
       color: $text-color2;
+      position: relative;
+      left: 20px;
+
+      &::before {
+        content: "";
+        background-image: url("/images/icon-ethereum.svg");
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        left: -18px;
+      }
     }
 
     .time {
       color: $alternate-color;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("/images/icon-clock.svg");
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        left: -25px;
+      }
     }
   }
 
   &__avatar {
     color: $white-color;
+    border-top: 1px solid $alternate-color;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
 
+    img {
+      width: 15%;
+    }
     .creator {
       color: $alternate-color;
+      margin-left: 1em;
     }
   }
 }

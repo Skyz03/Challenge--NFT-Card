@@ -27,31 +27,68 @@ body {
   background-color: #14253d;
   padding: 1em;
   border-radius: 15px;
+  box-shadow: 3px 3px 15px #5b6f8b;
 }
 .card__img img {
   width: 100%;
 }
 .card__title {
   color: white;
+  margin: 1em 0;
+  font-size: 1.6rem;
 }
 .card__desc {
   color: #5b6f8b;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 .card__timeline {
   display: flex;
   justify-content: space-between;
+  margin: 1em 0;
 }
 .card__timeline .eth {
   color: #00fff7;
+  position: relative;
+  left: 20px;
+}
+.card__timeline .eth::before {
+  content: "";
+  background-image: url("/images/icon-ethereum.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  left: -18px;
 }
 .card__timeline .time {
   color: #5b6f8b;
+  position: relative;
+}
+.card__timeline .time::before {
+  content: "";
+  background-image: url("/images/icon-clock.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  left: -25px;
 }
 .card__avatar {
   color: white;
+  border-top: 1px solid #5b6f8b;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+}
+.card__avatar img {
+  width: 15%;
 }
 .card__avatar .creator {
   color: #5b6f8b;
+  margin-left: 1em;
 }
 
 .container {
