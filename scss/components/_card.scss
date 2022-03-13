@@ -9,6 +9,35 @@
       width: 100%;
     }
   }
+
+  &__title {
+    color: $white-color;
+  }
+
+  &__desc {
+    color: $alternate-color;
+  }
+
+  &__timeline {
+    display: flex;
+    justify-content: space-between;
+
+    .eth {
+      color: $text-color2;
+    }
+
+    .time {
+      color: $alternate-color;
+    }
+  }
+
+  &__avatar {
+    color: $white-color;
+
+    .creator {
+      color: $alternate-color;
+    }
+  }
 }
 
 // .attribution {

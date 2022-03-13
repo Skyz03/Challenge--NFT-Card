@@ -31,6 +31,28 @@ body {
 .card__img img {
   width: 100%;
 }
+.card__title {
+  color: white;
+}
+.card__desc {
+  color: #5b6f8b;
+}
+.card__timeline {
+  display: flex;
+  justify-content: space-between;
+}
+.card__timeline .eth {
+  color: #00fff7;
+}
+.card__timeline .time {
+  color: #5b6f8b;
+}
+.card__avatar {
+  color: white;
+}
+.card__avatar .creator {
+  color: #5b6f8b;
+}
 
 .container {
   width: 100vw;
