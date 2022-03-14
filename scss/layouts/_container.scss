@@ -1,5 +1,5 @@
 .container {
-  width: 100vw;
   height: 100vh;
   @include flexCenter;
+  margin: 2em 0;
 }
